@@ -1,0 +1,82 @@
+body {
+  background-color: #141414;
+  color: white;
+}
+
+.movie-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-poster {
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s;
+  z-index: 300;
+
+}
+
+.movie-poster:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.input-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.movie-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-row {
+  padding-right: 20px;
+}
+
+.movies-heading {
+  padding-left: 20px;
+}
+
+.movie-poster:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 76.6%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 32px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  z-index: 500;
+}
+
+.Fav-Text {
+  margin-right: 5px;
+  
+}
+
+.hr {
+  width: 80%;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 22px;
+  margin-top: 25px;
+
+
+}
+
+.Cross {
+  margin-top: 5px;
+}
